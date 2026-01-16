@@ -7,19 +7,13 @@ env:
 
 jobs:
     build:
-        name: Build
-        runs-on: ubuntu-latest
-        
-        steps:
-            - name: check out the code
-              uses: actions/checkout@v2
+      runs-on: ubuntu-latest
+      steps:
+          - name: check out the code
+            uses: actions/checkout@v2
               
-            - name: upload Artifact
-              uses: actions/upload-artifact@v6.0.0
-              with:
+          - name: upload Artifact
+            uses: actions/upload-artifact@v6.0.0
+            with:
                 name: ${{env.ARTIFACT_NAME}}
                 Path: .
-              
-
-  
-
