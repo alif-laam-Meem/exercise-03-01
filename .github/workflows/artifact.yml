@@ -1,3 +1,4 @@
+---
 name: Artifact
 
 on: push
@@ -14,3 +15,4 @@ jobs:
           with:
             name: ${{env.ARTIFACT_NAME}}
             Path: .
+...
